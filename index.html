@@ -1,0 +1,67 @@
+<!--loc=67-->
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10916</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="data-head">Environment Readings</div>
+
+    <div class="data-container">
+        <div class="data-item">
+            <h2>Distance</h2>
+            <div>
+                <div></div>
+            </div>
+            <p class="value" id="dist">0cm</p>
+        </div>
+
+        <div class="data-item">
+            <h2>Humidity</h2>
+            <div class="gauge" id="humGauge">
+                <div class="gauge-fill" id="humGaugeFill"></div>
+            </div>
+            <p class="value" id="hum">0%</p>
+        </div>
+
+        <div class="data-item">
+            <h2>Light</h2>  
+            <div class="vertical-bar">
+                <div class="vertical-fill" id="lightVerticalFill"></div>
+            </div>
+            <p class="value" id="light">0</p>
+        </div>
+
+        <div class="data-item">
+            <h2>Sound</h2>
+            <div class="vertical-bar">
+                <div class="vertical-fill" id="soundVerticalFill"></div>
+            </div>
+            <p class="value" id="sound">0</p>
+        </div>
+
+        <div class="data-item">
+            <h2>Temperature</h2>
+            <div class="horizontal-bar">
+                <div class="horizontal-fill" id="tempFill"></div>
+            </div>
+            <p class="value" id="temp">0&#8451;</p>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+	<script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-analytics.js";
+    </script>
+
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>

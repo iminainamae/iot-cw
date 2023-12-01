@@ -1,0 +1,89 @@
+/*loc=89*/
+body { 
+    font-family: 'Arial', sans-serif; 
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.data-head {
+    width: 50%;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 20px;
+}
+
+.data-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.data-item {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+}
+
+.value {
+    font-size: 24px;
+    color: lightblue;
+}
+
+.horizontal-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+}
+
+.horizontal-fill {
+    width: 0;
+    height: 100%;
+    background-color: #3498db;
+    transition: width 0.5s;
+}
+  
+
+.gauge {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.gauge-fill {
+    width: 50%;
+    height: 100%;
+    border-radius: inherit;
+    background-color: #3498db;
+    transition: width 0.5s;
+}
+
+.vertical-bar {
+    position: relative;
+    width: 20px;
+    height: 150px;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+}
+
+.vertical-fill {
+    width: 100%;
+    position: absolute;
+    height: 0;
+    background-color: #3498db;
+    transition: height 0.5s;
+    bottom: 0;
+}
